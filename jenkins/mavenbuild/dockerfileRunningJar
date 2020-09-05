@@ -1,0 +1,3 @@
+FROM openjdk:8u212-jre-alpine3.9
+COPY *jar .
+CMD java -jar *jar

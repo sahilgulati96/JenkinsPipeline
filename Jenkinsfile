@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		echo '$(pwd)'
+		ls
                 //sh './jenkins/mavenbuild/mavenbuild.sh mvn -B -DskipTests clean package'
             }
         }

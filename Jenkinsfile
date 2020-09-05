@@ -9,7 +9,7 @@ pipeline {
         }
 	stage('Test') {
             steps {
-                echo 'Hello World'
+                sh './jenkins/test/maventest.sh mvn test'
             }
         }
 	stage('Push') {

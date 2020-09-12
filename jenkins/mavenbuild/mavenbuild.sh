@@ -5,5 +5,5 @@ echo "Copy the Jar file to build Directory"
 cp ./mavenapp/target/*jar ./
 
 echo "Creating dockerimage for the Jar"
-docker build -t app:$BUILD_TAG -f dockerfileRunningJar --no-cache .
+docker build -t sahilgulati102/mavenapp:$BUILD_TAG -f dockerfileRunningJar --no-cache .
 

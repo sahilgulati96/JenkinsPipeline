@@ -15,7 +15,7 @@ pipeline {
         }
 	stage('Push') {
             steps {
-                echo 'Hello World'
+                sh './jenkins/push/push.sh'
             }
         }
 	stage('Deploy') {

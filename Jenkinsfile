@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    environment {
+    PASS = credentials('DOCKER_PASS')
+    }
     stages {
         stage('Build') {
             steps {

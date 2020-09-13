@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		git 'https://github.com/sahilgulati96/JenkinsPipeline.git'
+		
 		sh './jenkins/mavenbuild/mavenbuild.sh mvn -B -DskipTests clean package'
             }
         }
